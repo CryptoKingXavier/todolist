@@ -4,7 +4,7 @@ import TodoList from "./components/TodoList";
 import "./App.css";
 
 function App() {
-  const todoNameRef = useRef();
+  const todoNameRef = useRef(null);
   const LOCAL_STORAGE_KEY = "TodoApp.Todos";
   const [todos, setTodos] = useState(() => {
     const storedTodos = localStorage.getItem(LOCAL_STORAGE_KEY)
