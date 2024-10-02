@@ -1,0 +1,125 @@
+/* General styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 75vw;
+  max-width: 600px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.todo-actions button {
+  background-color: #ff4757;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.todo-actions button:hover {
+  background-color: #e84118;
+}
+
+/* Input styling */
+input[type="text"] {
+  width: 80%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  transition: border 0.3s ease;
+  text-align: center;
+  color: darkslateblue;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button[disabled] {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Todo counter */
+.todo-counter {
+  font-size: 1.1em;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+/* No Todos styling */
+.no-todos {
+  font-size: 2em;
+  font-style: italic;
+  color: #b0bec5;
+  margin-top: 50px;
+}
+
+/* Todo list styling */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-list div {
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.todo-list div:hover {
+  background-color: #e9ecef;
+}
+
+.todo-list .todo-text {
+  font-size: 1.2em;
+  margin: auto;
+}
+
+.todo-list .todo-text input[type="checkbox"] {
+  margin-right: .5rem;
+}
